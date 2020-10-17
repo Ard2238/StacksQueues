@@ -5,8 +5,7 @@ public class StacksQueues <E>{
     public void pushData(E data){
         addData(data);
     }
-
-    private void addData(E data) {
+    public void addData(E data) {
         Node new_node = new Node(data);
         if(new_node == null){
             System.out.println("Stack Overflow");
@@ -16,5 +15,25 @@ public class StacksQueues <E>{
             head = new_node;
         }
         return;
+    }
+
+    /* UC2 -- peek and pop data from the stack till it is empty */
+    public E popData(){
+        if(this.head == null){
+            System.out.println("Stack Underflow.");
+            return null;
+        }
+        E data = (E) this.head.data;
+        this.head = this.head.next;
+        return data;
+    }
+
+    public E peekData(){
+        if(this.head == null){
+            System.out.println("Stack Underflow");
+            return null;
+        }
+        E data =  (E) this.head.data;
+        return data;
     }
 }

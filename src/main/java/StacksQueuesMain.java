@@ -11,5 +11,14 @@ public class StacksQueuesMain {
         sqm.stack.pushData(70);
         sqm.stack.pushData(30);
         sqm.stack.pushData(56);
+
+        sqm.stack.peekData();
+        sqm.stack.popData();
+        sqm.stack.peekData();
+        sqm.stack.popData();
+        sqm.stack.peekData();
+        sqm.stack.popData();
+        sqm.stack.peekData();
+        sqm.stack.popData();
     }
 }
