@@ -1,4 +1,4 @@
-public class StacksQueues <E>{
+public class Stacks<E>{
     Node head;
 
     /* UC1 -- pushing data onto the stack */

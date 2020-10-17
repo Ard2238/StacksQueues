@@ -1,8 +1,10 @@
 public class StacksQueuesMain {
-    StacksQueues stack;
+    Stacks stack;
+    Queues queue;
 
     public StacksQueuesMain(){
-        stack = new StacksQueues();
+        stack = new Stacks();
+        queue = new Queues();
     }
     public static void main(String[] args) {
         System.out.println("Welcome to the Stacks and Queues Program");
@@ -20,5 +22,9 @@ public class StacksQueuesMain {
         sqm.stack.popData();
         sqm.stack.peekData();
         sqm.stack.popData();
+
+        sqm.queue.enqueueData(56);
+        sqm.queue.enqueueData(30);
+        sqm.queue.enqueueData(70);
     }
 }
