@@ -26,5 +26,10 @@ public class StacksQueuesMain {
         sqm.queue.enqueueData(56);
         sqm.queue.enqueueData(30);
         sqm.queue.enqueueData(70);
+
+        sqm.queue.dequeue();
+        sqm.queue.dequeue();
+        sqm.queue.dequeue();
+        sqm.queue.dequeue();
     }
 }

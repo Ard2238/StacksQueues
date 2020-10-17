@@ -14,4 +14,15 @@ public class Queues <E>{
             this.tail.next = new_node;
         this.tail = new_node;
     }
+
+    /* UC4 -- dequeue with linked list */
+    public void dequeue(){
+        if(this.head == null){
+            System.out.println("Queue Underflow");
+            return;
+        }
+        E data =(E) this.head.data;
+        head = head.next;
+        return;
+    }
 }
